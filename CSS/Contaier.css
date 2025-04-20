@@ -2,6 +2,7 @@
   --Color: #fff;
   --ColorHeader-top: #3a5a40ea;
   --Color-menu__list: #588157;
+  --ColorFooterL: #A3B18A;
 }
 
 * {
@@ -103,3 +104,158 @@ body {
 }
 
 
+footer {
+  background: var(--ColorHeader-top);
+  padding: 40px 20px;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+
+  .footer-sections {
+    max-width: 1380px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .footer-column {
+      padding: 10px;
+      min-width: 200px;
+
+      h3 {
+        font-size: 1.5rem;
+        color: var(--ColorFooterL);
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 1rem 0;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+              color: #e0e0e0;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-images {
+      display: flex;
+      width: 450px;
+      gap: 10px;
+      padding: 10px;
+
+      img {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+
+        &:hover {
+          transform: scale(1.05);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 20px;
+    max-width: 1380px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      .brand {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+
+        .accent {
+          color: #4a7c6b;
+        }
+      }
+
+      p {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #aaa;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      a {
+        color: #ccc;
+        text-decoration: none;
+        border-bottom: 1px solid #555;
+
+        &:hover {
+          border-color: #aaa;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #999;
+  }
+}
+
+/* From Uiverse.io by alexruix */ 
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  min-height: 50px;
+  max-width: 150px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid var(--ColorFooterL);
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button--submit {
+  min-height: 50px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: var(--ColorHeader-top);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: var(--Color-menu__list);
+}
+
+.input:focus, .input:focus-visible {
+  border-color: #3898EC;
+  outline: none;
+}
