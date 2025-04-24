@@ -45,16 +45,24 @@
       </div>
     </header>
 
-    <header>
+    <header id="header">
       <div class="header-menu">
         <div class="header-menu__flex">
           <div class="header-menu__list">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Contact Us</a></li>
+            <ul class="header-menu__list-flex">
+              <li><a class="item" href="#">Home</a></li>
+              <li><a class="item" href="#">About Us</a></li>
+              <li class="drop">
+                <a class="drop-btn item" href="#">Shop</a>
+                <ul class="dropdown">
+                  <li><a href="#">Shoes</a></li>
+                  <li><a href="#">Boots</a></li>
+                  <li><a href="#">Wear</a></li>
+                  <li><a href="#">Dress</a></li>
+                </ul>
+              </li>
+              <li><a class="item" href="#">Blogs</a></li>
+              <li><a class="item" href="#">Contact Us</a></li>
             </ul>
           </div>
           <p class="header-menu__logo">ShoesVibe</p>
@@ -111,7 +119,8 @@
           </div>
         </div>
       </section>
-      <!-- ------------Banner--------------- -->
+
+      <!--------------------------------Banner------------------------------->
       <div class="banner-slide">
         <div class="banner-slide__logo">
           <!-- <--------banner-1--------->
@@ -143,7 +152,8 @@
           </div>
         </div>
       </div>
-      <!-- <------Features--------------- -->
+      <!----------
+      ---------------------Features------------------------------->
       <section>
         <div class="features">
           <h1>Feature Products</h1>
@@ -328,7 +338,7 @@
           </div>
         </div>
       </section>
-      <!-- --------------------Collections-------------- -->
+      <!-- ---------------------------Collections----------------------------->
       <section>
         <div class="Collections">
           <div class="Collections-wrapper">
@@ -347,7 +357,8 @@
           </div>
         </div>
       </section>
-      <!-- ----------------ProductSeller-------------- -->
+
+      <!-- ---------------------------ProductSeller--------------------------->
       <section>
         <div class="Product-seller">
           <div class="Product-seller__columns">
@@ -472,6 +483,7 @@
         </div>
       </section>
 
+      <!-- <---------------------------Exclusive------------------------------->
       <section>
         <div class="exclusive">
           <div class="exclusive-layout">
@@ -511,6 +523,7 @@
         </div>
       </section>
 
+      <!-- <---------------------------Testimonials-------------------------->
       <section id="testimonials">
         <div class="title-testimonials">
           <h2>Testimonials</h2>
@@ -1498,6 +1511,7 @@
         </div>
       </section>
 
+      <!-- <----------------------------Lastest--------------------------->
       <section>
         <div class="Lastest">
           <h2>Lastest Articles</h2>
@@ -1631,5 +1645,6 @@
     </footer>
 
     <script src="/JS/index.js"></script>
+   <script src="/JS/test.js"></script>
   </body>
 </html>

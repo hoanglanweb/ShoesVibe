@@ -2,7 +2,7 @@
   --Color: #fff;
   --ColorHeader-top: #3a5a40ea;
   --Color-menu__list: #588157;
-  --ColorFooterL: #A3B18A;
+  --ColorFooterL: #a3b18a;
 }
 
 * {
@@ -16,6 +16,38 @@ body {
   background: #dad7cd;
 }
 /* <-------------- Header -------------> */
+#header {
+  position: relative;
+  width: 100%;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+#header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #588157;
+  animation: slideDown 0.9s ease forwards;
+
+  ul > li > .item{
+    color: #fff;
+  }
+  p{
+    color: #fff;
+  }
+  .header-menu__infomation > a{
+    color: #fff;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .header-top {
   background: var(--ColorHeader-top);
 
@@ -48,7 +80,7 @@ body {
       font-size: 1rem;
       color: var(--Color);
 
-      strong{
+      strong {
         margin: 0 0 0 5px;
       }
     }
@@ -73,15 +105,62 @@ body {
 
     .header-menu__list {
       width: 460px;
-      ul {
+      .header-menu__list-flex {
         display: flex;
         gap: 2rem;
 
         li > a {
+          font-weight: 600;
           color: var(--Color-menu__list);
         }
       }
     }
+    /* *************dropmenu************** */
+    .drop {
+      position: relative;
+    }
+
+    .drop-btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Dropdown container (hidden & animated) */
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      min-width: 150px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+      z-index: 1000;
+    }
+
+    /* Dropdown items */
+    .dropdown li a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      background: #fff;
+    }
+
+    .dropdown li a:hover {
+      background: #555;
+    }
+
+    /* On hover, show dropdown with animation */
+    .drop:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
     .header-menu__logo {
       width: 250px;
       font-size: 2rem;
@@ -102,7 +181,6 @@ body {
     }
   }
 }
-
 
 footer {
   background: var(--ColorHeader-top);
@@ -222,7 +300,7 @@ footer {
   }
 }
 
-/* From Uiverse.io by alexruix */ 
+/* From Uiverse.io by alexruix */
 .input-group {
   display: flex;
   align-items: center;
@@ -241,21 +319,22 @@ footer {
 
 .button--submit {
   min-height: 50px;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border: none;
   border-radius: 0 6px 6px 0;
   background-color: var(--ColorHeader-top);
   color: #fff;
   font-size: 15px;
   cursor: pointer;
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .button--submit:hover {
   background-color: var(--Color-menu__list);
 }
 
-.input:focus, .input:focus-visible {
-  border-color: #3898EC;
+.input:focus,
+.input:focus-visible {
+  border-color: #3898ec;
   outline: none;
 }

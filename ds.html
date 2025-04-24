@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+    #header {
+      position: relative;
+      width: 100%;
+      padding: 24px 0;
+      background-color: red;
+      transition: all 0.4s ease;
+      z-index: 999;
+    }
+    #header.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 12px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 12px 12px;
+      animation: slideDown 0.9s ease forwards;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    /* h1 {
+      margin: 0;
+      font-size: 24px;
+      transition: font-size 0.3s ease;
+    } */
+    /* #header.sticky h1 {
+      font-size: 20px;
+    } */
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <body>
+    <header>
+        <div class="container">
+          <h1>Awesome Site</h1>
+        </div>
+      </header>
+    <header id="header">
+      <div class="container">
+        <h1>Awesome Site</h1>
+      </div>
+    </header>
+    <main>
+      <div style="height: 150vh; padding: 20px">
+        Cuộn xuống để xem header đẹp mượt 😎
+      </div>
+    </main>
+    <script>
+      const header = document.getElementById("header");
+      let isSticky = false;
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        if (scrollY > 80 && !isSticky) {
+          header.classList.add("sticky");
+          isSticky = true;
+        } else if (scrollY <= 80 && isSticky) {
+          header.classList.remove("sticky");
+          isSticky = false;
+        }
+      });
+    </script>
+  </body>
+</html>

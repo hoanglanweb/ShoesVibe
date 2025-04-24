@@ -593,12 +593,10 @@ section .features p {
 }
 
 /* <--------------------------------Testimonals-------------------------> */
-/* From Uiverse.io by Yaya12085 */
 .task {
   position: relative;
   color: #2e2e2f;
   cursor: move;
-  background-color: #fff;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
@@ -622,7 +620,7 @@ section .features p {
   padding: 4px 13px;
   font-size: 12px;
   color: #ffffff;
-  background-color: #1389eb;
+  background-color: var(--primary-text);
 }
 
 .tags {
@@ -671,7 +669,7 @@ section .features p {
 .viewer span {
   height: 30px;
   width: 30px;
-  background-color: rgb(28, 117, 219);
+  background-color: var(--primary-text);
   margin-right: -10px;
   border-radius: 50%;
   border: 1px solid #fff;
