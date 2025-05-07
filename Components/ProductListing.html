@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - ShoesVibe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Components/CSS/productListing.css" />
+    <link rel="stylesheet" href="/CSS/Contaier.css" />
+    <link rel="stylesheet" href="/CSS/Fonts.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="header-top">
+        <div class="header-top__flex">
+          <div class="header-top__title">
+            <a href="#" class="fa-solid fa-phone-volume"></a>
+            <p>086 777 90028</p>
+          </div>
+          <p class="header-top__p">
+            Black Friday Sale:
+            <strong>
+              <marquee behavior="left" direction=""
+                >Save up to 60% with code ShoesVibe
+              </marquee>
+            </strong>
+          </p>
+          <div class="header-top__langue">
+            <a href="#">VND <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#">Vietnamese <i class="fa-solid fa-angle-down"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header id="header" class="product-list">
+      <div class="header-menu">
+        <div class="header-menu__flex">
+          <div class="header-menu__list">
+            <ul class="header-menu__list-flex">
+              <li><a class="item" href="/index.html">Home</a></li>
+              <li><a class="item" href="#">About Us</a></li>
+              <li class="drop">
+                <a class="drop-btn item" href="#">Shop</a>
+                <ul class="dropdown">
+                  <li><a href="#">New arrivals</a></li>
+                  <li><a href="#">Collects</a></li>
+                  <li>
+                    <a href="/Components/ProductListing.html">Shop Details</a>
+                  </li>
+                  <li><a href="#">For You</a></li>
+                </ul>
+              </li>
+              <li><a class="item" href="#">Blogs</a></li>
+              <li><a class="item" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <p class="header-menu__logo">ShoesVibe</p>
+          <div class="header-menu__infomation">
+            <a href="#" class="fa-solid fa-magnifying-glass"></a>
+            <a href="#" class="fa-solid fa-user"></a>
+            <a href="#" class="fa-solid fa-cart-shopping"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="navbar">
+        <img
+          src="https://as2.ftcdn.net/v2/jpg/03/83/99/01/1000_F_383990163_rKoufGDLPlegVHIZ6UkngWLdorWCIti0.jpg"
+          alt=""
+        />
+        <h2>SHOP</h2>
+      </div>
+    </nav>
+
+    <div class="shop-container">
+      <aside class="filters">
+        <div class="filter-section">
+          <h3>Categories</h3>
+          <label><input type="checkbox" /> Running</label>
+          <label><input type="checkbox" /> Casual</label>
+          <label><input type="checkbox" /> Sports</label>
+          <label><input type="checkbox" /> Formal</label>
+        </div>
+
+        <div class="filter-section">
+          <h3>Price Range</h3>
+          <input type="range" min="0" max="500" class="price-slider" />
+          <div class="price-range">
+            <span>$0</span>
+            <span>$500</span>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Size</h3>
+          <div class="size-grid">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+            <button>11</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="products-grid" id="gird">
+        <!-- Productlist -->
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-sections">
+        <div class="footer-column">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Collections</h3>
+          <ul>
+            <li><a href="#">Nike Air Max</a></li>
+            <li><a href="#">Nike Air Max 1 SC</a></li>
+            <li><a href="#">Nike Metcon</a></li>
+            <li><a href="#">Jordan 1 Mid</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="#">My Orders</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Check Out</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-images">
+          <img src="/assets/blog-3.png" alt="Shoes 1" />
+          <img src="/assets/blog-1.png" alt="Shoes 2" />
+          <img src="/assets/blog-2.png" alt="Shoes 3" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="logo">
+          <span class="brand">Shoe<span class="accent">V</span>ibe</span>
+          <!-- From Uiverse.io by alexruix -->
+          <div class="input-group">
+            <input
+              type="email"
+              class="input"
+              id="Email"
+              name="Email"
+              placeholder="uiverse@verse.io"
+              autocomplete="off"
+            />
+            <input class="button--submit" value="Subscribe" type="submit" />
+          </div>
+        </div>
+        <div class="links">
+          <a href="#">Legal</a>
+          <a href="#">Country site map</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Modern slavery statement</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          &copy;2024 All Rights Copyright <strong>ShoeVibe</strong>. Design &
+          Developed By <strong>NHOM1</strong>.
+        </p>
+      </div>
+    </footer>
+    <script>
+      const productListing = document.getElementById("gird");
+
+      fetch("/Data/Data.json")
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("du lieu:", data);
+          data.Nike.forEach((item) => {
+            const productlistDiv = document.createElement("div");
+            productlistDiv.innerHTML = `
+                         <div class="product-card">
+                           <img src="${item.thumbail}" alt="Puma RS-X">
+                               <div class="product-info">
+                                <h3>${item.title}</h3>
+                                <div class="rating">★★★★☆</div>
+                                <p class="price">${item.Price}</p>
+                                <a href="ProductDetails.html?id=${item.id}" class="view-details">View Details</a>
+                              </div>
+                         </div>
+                    `;
+            productListing.appendChild(productlistDiv);
+          });
+        })
+        .catch((error) => {
+          console.log("loi roi!", error);
+        });
+    </script>
+    <script src="/JS/Srcoll.js"></script>
+  </body>
+</html>
