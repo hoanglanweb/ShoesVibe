@@ -1,0 +1,198 @@
+.section__wrapper-animated,
+.section-wrapper__left-content,
+.section-wrapper__right,
+.banner-slide,
+.features,
+#text,
+#img1,
+#img2,
+#img3,
+.Product-seller,
+#seller-1,
+#ex1,
+#ex2,
+#testimonials,
+.Lastest {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.5s ease-out;
+}
+
+/* --- Khi có class animate --- */
+.section__wrapper-animated.animate {
+  animation: slideLeft 0.5s ease-in forwards;
+}
+.section-wrapper__left-content.animate {
+  animation: fadeinTop 1s ease-out forwards;
+}
+.section-wrapper__right.animate {
+  animation: fade 1s ease-out forwards;
+}
+.banner-slide.animate {
+  animation: fadeBanner 2s ease-out forwards;
+}
+.features.animate {
+  animation: fadeinFeatures 2.5s ease-out forwards;
+}
+#text.animate {
+  animation: fadeintext 1s ease-out forwards;
+}
+#img1.animate {
+  animation: fadeinimg1 1s ease-out forwards;
+}
+#img2.animate {
+  animation: fadeinimg2 1s ease-out forwards;
+}
+#img3.animate {
+  animation: fadeinimg3 1s ease-out forwards;
+}
+.Product-seller.animate {
+  animation: fadeinproductseller 1s ease-out forwards;
+}
+#ex1.animate {
+  animation: fadeinexclusive1 1s ease-out forwards;
+}
+#ex2.animate {
+  animation: fadeinexclusive2 1s ease-out forwards;
+}
+#testimonials.animate {
+  animation: fadeintestimonials 1s ease-out forwards;
+}
+.Lastest.animate {
+  animation: fadeinLastest 1s ease-out forwards;
+}
+#seller-1.animate {
+  animation: fadeBanner 1s ease-out forwards;
+}
+
+/* --- Keyframes --- */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeinTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeBanner {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeinFeatures {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeintext {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeinimg1 {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeinimg2 {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeinimg3 {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeinproductseller {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeinexclusive1 {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeinexclusive2 {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeintestimonials {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeinLastest {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
