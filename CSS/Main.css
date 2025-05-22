@@ -406,7 +406,7 @@ section .features p {
   }
   .text {
     color: grey;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 .columns__flex {
@@ -749,9 +749,7 @@ section .features p {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
-.testimonials:hover .task {
-  animation-play-state: paused;
-}
+
 
 /* <--------------------Lastest---------------------> */
 

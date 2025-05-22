@@ -25,8 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let paused = false;
 
-  container.addEventListener("mouseenter", () => (paused = true));
-  container.addEventListener("mouseleave", () => (paused = false));
 
   function animate() {
     if (!paused) {
@@ -58,22 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
   animate();
 });
 
-let paused = false;
 
-container.addEventListener("mouseenter", () => (paused = true));
-container.addEventListener("mouseleave", () => (paused = false));
 
-function animate() {
-  if (!paused) {
-    items.forEach((item, index) => {
-      positions[index] -= 1;
-      if (positions[index] < -item.offsetWidth) {
-        positions[index] = containerWidth;
-      }
-      item.style.left = positions[index] + "px";
-    });
-  }
-  requestAnimationFrame(animate);
-}
+
 
 
