@@ -1,0 +1,29 @@
+{
+    "Nike": [
+      {
+        "id": 1,
+        "thumbail": "/assets/features-01.png",
+        "title": "Nike Air Force"
+      },
+      {
+        "id": 2,
+        "thumbail": "/assets/features-02.avif",
+        "title": "Jordan 1"
+      },
+      {
+        "id": 3,
+        "thumbail": "/assets/features-03.png",
+        "title": "Nike Blazer"
+      },
+      {
+        "id": 4,
+        "thumbail": "/assets/features-04.png",
+        "title": "Zion 4 PF"
+      },
+      {
+        "id": 5,
+        "thumbail": "/assets/features-05.png",
+        "title": "Nike Cortez"
+      }
+    ]
+  }

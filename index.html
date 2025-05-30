@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="/CSS/Contaier.css" />
     <link rel="stylesheet" href="/CSS/Main.css" />
     <link rel="stylesheet" href="/CSS/animated.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/reponsive.css">
+    <title>ShoesVibe</title>
   </head>
   <body>
     <div id="preloader">
@@ -48,7 +49,7 @@
     </div>
 
     <div id="max-content" style="display: none;">
-      <div class="header__animated-fade">
+      <div class="header__animated-fade header">
         <header class="container">
           <div class="header-top">
             <div class="header-top__flex">
@@ -56,14 +57,14 @@
                 <a href="#" class="fa-solid fa-phone-volume"></a>
                 <p>086 777 90028</p>
               </div>
-              <p class="header-top__p">
-                Black Friday Sale:
-                <strong>
+              <div class="header-top__p">
+                <p>Black Friday Sale:</p>
+                <p>
                   <marquee behavior="left" direction=""
                     >Save up to 60% with code ShoesVibe
                   </marquee>
-                </strong>
-              </p>
+                </p>
+              </div>
               <div class="header-top__langue">
                 <a href="#">VND <i class="fa-solid fa-angle-down"></i></a>
                 <a href="#"
@@ -86,10 +87,17 @@
                     <ul class="dropdown">
                       <li><a href="#">New arrivals</a></li>
                       <li><a href="#">Collects</a></li>
-                      <li>
-                        <a href="/Components/ProductListing.html"
+                      <li class="has-dropdown">
+                        <a href="/Components/Product.html"
                           >Shop Details</a
                         >
+                        <ul class="dropmenu__level-1">
+                          <li><a href="/Components/ProductListing.html?category=NikeAirForce">Nike Air Force</a></li>
+                          <li><a href="/Components/ProductListing.html?category=Jordan">Jordan 1</a></li>
+                          <li><a href="/Components/ProductListing.html?category=Blazer">Nike Blazer</a></li>
+                          <li><a href="/Components/ProductListing.html?category=Dunk">Nike Dunk</a></li>
+                          <li><a href="/Components/ProductListing.html?category=Cortez">Nike Cortez</a></li>
+                        </ul>
                       </li>
                       <li><a href="#">For You</a></li>
                     </ul>
@@ -100,9 +108,10 @@
               </div>
               <p class="header-menu__logo">ShoesVibe</p>
               <div class="header-menu__infomation">
-                <a href="#" class="fa-solid fa-magnifying-glass"></a>
+                <a href="#" class="fa-solid fa-magnifying-glass icon-none"></a>
                 <a href="#" class="fa-solid fa-user"></a>
                 <a href="#" class="fa-solid fa-cart-shopping"></a>
+                <a href="#" class="fa-solid fa-bars icon-toggle"></a>
               </div>
             </div>
           </div>
@@ -114,7 +123,7 @@
         <section>
           <div class="section-wrapper">
             <div class="section-wrapper__left">
-              <h2 class="section__wrapper-animated">Sales that Define Style</h2>
+              <h2 class="section__wrapper-animated title-section">Sales that Define Style</h2>
               <p class="section__wrapper-animated">
                 Lorem ipsum dolor sit amet consectetur. Ornare viverra id
                 egestas facilisis leo lectus lacinia. Turpis at risus nibh in
@@ -155,7 +164,7 @@
         </section>
 
         <!--------------------------------Banner------------------------------->
-        <div class="banner-slide">
+        <section class="banner-slide">
           <div class="banner-slide__logo">
             <!-- <--------banner-1--------->
             <div class="brand-image__slider">
@@ -185,7 +194,7 @@
               <img src="/assets/Adidas-logo.png" alt="" />
             </div>
           </div>
-        </div>
+        </section>
         <!----------
         ---------------------Features------------------------------->
         <section>
@@ -195,9 +204,12 @@
               Explore our top-rated,customers-favorite products that everyone's
               loving!
             </p>
+            <button id="prevBtn" class="nav-btn prev">❮</button>
+            <button id="nextBtn" class="nav-btn next">❯</button>
             <div class="features-porduct">
-              <div class="features-product_Card" id="Features"></div>
-              <div class="features-product_Card" id="Features2"></div>
+              <div class="features-product_Card" id="Features">
+                  <!-----Render is here----> 
+              </div>
             </div>
           </div>
         </section>
@@ -350,8 +362,8 @@
         <section>
           <div class="exclusive">
             <div class="exclusive-layout">
-              <h2 id="exclus-1">Exclusive Deals</h2>
-              <p id="exclus-1" class="text">
+              <h2 id="exclus-1 animated">Exclusive Deals</h2>
+              <p id="exclus-1 animated" class="text">
                 Explore our top-rated,customers-products that everyone's loving!
               </p>
               <div class="exclusive-layout__flex">
@@ -1624,8 +1636,9 @@
 
     <script src="/JS/Srcoll.js"></script>
     <script src="/JS/index.js"></script>
-    <script src="/JS/fetchData.js"></script>
+    <script src="/JS/Features.js"></script>
     <script src="/JS/Loading.js"></script>
     <script src="/JS/animated.js"></script>
+    <script src="/JS/main.js"></script>
   </body>
 </html>
