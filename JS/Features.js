@@ -6,7 +6,7 @@ let position = 0;
 const slideAmount = 266; // Card width + gap
 let totalCards = 0;
 
-fetch("/Data/Product.json")
+fetch("/Data/Features.json")
   .then(res => res.json())
   .then(data => {
     totalCards = data.Nike.length;
