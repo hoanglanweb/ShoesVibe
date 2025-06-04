@@ -5,5 +5,5 @@ window.addEventListener("load", () =>{
     setTimeout(() =>{
         preloader.style.display = "none"
         content.style.display = "block"
-    },2000)
+    },1000)
 })

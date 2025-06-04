@@ -447,12 +447,12 @@ main {
     margin-bottom: 2rem;
   }
 }
-.columns__flex {
-  display: flex;
-  justify-content: space-between;
-}
-.col-1 {
-  margin-bottom: 1rem;
+
+.seller{
+  margin: 1rem 0 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
 }
 .card {
   width: 320px;
@@ -475,7 +475,12 @@ main {
 .card-info {
   padding-top: 10%;
 }
-
+.card-info .text-title{
+  color: #000;
+}
+.card-info .text-body{
+  color: grey;
+}
 .card-footer {
   width: 100%;
   display: flex;
@@ -483,6 +488,9 @@ main {
   align-items: center;
   padding-top: 10px;
   border-top: 1px solid #ddd;
+}
+.card-footer .text-title{
+  color: var(--primary-text);
 }
 
 /*Text*/
