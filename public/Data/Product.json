@@ -3,12 +3,12 @@
         "NikeAirForce": [
             {
                 "id": 1,
-                "thumbail": "/assets/NikeAirforce/Product-01.avif",
+                "thumbail": "/public/assets/NikeAirforce/Product-01.avif",
                 "images": [
-                    "/assets/NikeAirforce/Product-01__01.avif",
-                    "/assets/NikeAirforce/Product-01__02.avif",
-                    "/assets/NikeAirforce/Product-01__03.avif",
-                    "/assets/NikeAirforce/Product-01__04.avif"
+                    "/public/assets/NikeAirforce/Product-01__01.avif",
+                    "/public/assets/NikeAirforce/Product-01__02.avif",
+                    "/public/assets/NikeAirforce/Product-01__03.avif",
+                    "/public/assets/NikeAirforce/Product-01__04.avif"
                 ],
                 "title": "Nike Air Force 1'07",
                 "description": "Men's shoes",
@@ -18,12 +18,12 @@
             },
             {
                 "id": 2,
-                "thumbail": "/assets/NikeAirforce/Product-02.avif",
+                "thumbail": "/public/assets/NikeAirforce/Product-02.avif",
                 "images": [
-                    "/assets/NikeAirforce/Product-02__01.avif",
-                    "/assets/NikeAirforce/Product-02__02.avif",
-                    "/assets/NikeAirforce/Product-02__03.avif",
-                    "/assets/NikeAirforce/Product-02__04.avif"
+                    "/public/assets/NikeAirforce/Product-02__01.avif",
+                    "/public/assets/NikeAirforce/Product-02__02.avif",
+                    "/public/assets/NikeAirforce/Product-02__03.avif",
+                    "/public/assets/NikeAirforce/Product-02__04.avif"
                 ],
                 "title": "Nike Air Force 1'07",
                 "description": "Men's shoes",
@@ -34,12 +34,12 @@
             },
             {
                 "id": 3,
-                "thumbail": "/assets/NikeAirforce/Product-03.avif",
+                "thumbail": "/public/assets/NikeAirforce/Product-03.avif",
                 "images": [
-                    "/assets/NikeAirforce/Product-03__01.avif",
-                    "/assets/NikeAirforce/Product-03__02.avif",
-                    "/assets/NikeAirforce/Product-03__03.avif",
-                    "/assets/NikeAirforce/Product-03__04.avif"
+                    "/public/assets/NikeAirforce/Product-03__01.avif",
+                    "/public/assets/NikeAirforce/Product-03__02.avif",
+                    "/public/assets/NikeAirforce/Product-03__03.avif",
+                    "/public/assets/NikeAirforce/Product-03__04.avif"
                 ],
                 "title": "Nike Air Force 1'07 LV8",
                 "description": "Men's shoes",
@@ -50,12 +50,12 @@
             },
             {
                 "id": 4,
-                "thumbail": "/assets/NikeAirforce/Product-04.avif",
+                "thumbail": "/public/assets/NikeAirforce/Product-04.avif",
                 "images": [
-                    "/assets/NikeAirforce/Product-04__01.avif",
-                    "/assets/NikeAirforce/Product-04__02.avif",
-                    "/assets/NikeAirforce/Product-04__03.avif",
-                    "/assets/NikeAirforce/Product-04__04.avif"
+                    "/public/assets/NikeAirforce/Product-04__01.avif",
+                    "/public/assets/NikeAirforce/Product-04__02.avif",
+                    "/public/assets/NikeAirforce/Product-04__03.avif",
+                    "/public/assets/NikeAirforce/Product-04__04.avif"
                 ],
                 "title": "Nike Air Force 1 LV8",
                 "description": "Older Kid's shoes",
@@ -67,12 +67,12 @@
         "Jordan": [
             {
                 "id": 5,
-                "thumbail": "/assets/Jordan/Jordan-01.avif",
+                "thumbail": "/public/assets/Jordan/Jordan-01.avif",
                 "images": [
-                    "/assets/Jordan/Jordan-01__01.avif",
-                    "/assets/Jordan/Jordan-01__02.avif",
-                    "/assets/Jordan/Jordan-01__03.avif",
-                    "/assets/Jordan/Jordan-01__04.avif"
+                    "/public/assets/Jordan/Jordan-01__01.avif",
+                    "/public/assets/Jordan/Jordan-01__02.avif",
+                    "/public/assets/Jordan/Jordan-01__03.avif",
+                    "/public/assets/Jordan/Jordan-01__04.avif"
                 ],
                 "title": "Air Jordan 1 Low",
                 "description": "Men's shoes",
@@ -82,12 +82,12 @@
             },
             {
                 "id": 6,
-                "thumbail": "/assets/Jordan/Jordan-02.avif",
+                "thumbail": "/public/assets/Jordan/Jordan-02.avif",
                 "images": [
-                    "/assets/Jordan/Jordan-02__01.avif",
-                    "/assets/Jordan/Jordan-02__02.avif",
-                    "/assets/Jordan/Jordan-02__03.avif",
-                    "/assets/Jordan/Jordan-02__04.avif"
+                    "/public/assets/Jordan/Jordan-02__01.avif",
+                    "/public/assets/Jordan/Jordan-02__02.avif",
+                    "/public/assets/Jordan/Jordan-02__03.avif",
+                    "/public/assets/Jordan/Jordan-02__04.avif"
                 ],
                 "title": "Air Jordan 1 Low",
                 "description": "Men's shoes",
@@ -97,12 +97,12 @@
             },
             {
                 "id": 7,
-                "thumbail": "/assets/Jordan/Jordan-03.avif",
+                "thumbail": "/public/assets/Jordan/Jordan-03.avif",
                 "images": [
-                    "/assets/Jordan/Jordan-03__01.avif",
-                    "/assets/Jordan/Jordan-03__02.avif",
-                    "/assets/Jordan/Jordan-03__03.avif",
-                    "/assets/Jordan/Jordan-03__04.avif"
+                    "/public/assets/Jordan/Jordan-03__01.avif",
+                    "/public/assets/Jordan/Jordan-03__02.avif",
+                    "/public/assets/Jordan/Jordan-03__03.avif",
+                    "/public/assets/Jordan/Jordan-03__04.avif"
                 ],
                 "title": "Jordan NU Retro 1 G",
                 "description": "Golf Shoes",
@@ -114,12 +114,12 @@
         "Dunk": [
             {
                 "id": 8,
-                "thumbail": "/assets/Dunk/Dunk-01.avif",
+                "thumbail": "/public/assets/Dunk/Dunk-01.avif",
                 "images": [
-                    "/assets/Dunk/Dunk-01-01.avif",
-                    "/assets/Dunk/Dunk-01-02.avif",
-                    "/assets/Dunk/Dunk-01-03.avif",
-                    "/assets/Dunk/Dunk-01-04.avif"
+                    "/public/assets/Dunk/Dunk-01-01.avif",
+                    "/public/assets/Dunk/Dunk-01-02.avif",
+                    "/public/assets/Dunk/Dunk-01-03.avif",
+                    "/public/assets/Dunk/Dunk-01-04.avif"
                 ],
                 "title": "Nike Dunk Low SE",
                 "description": "Men's shoes",
@@ -129,12 +129,12 @@
             },
             {
                 "id": 9,
-                "thumbail": "/assets/Dunk/Dunk-02.avif",
+                "thumbail": "/public/assets/Dunk/Dunk-02.avif",
                 "images": [
-                    "/assets/Dunk/Dunk-02-01.avif",
-                    "/assets/Dunk/Dunk-02-02.avif",
-                    "/assets/Dunk/Dunk-02-03.avif",
-                    "/assets/Dunk/Dunk-02-04.avif"
+                    "/public/assets/Dunk/Dunk-02-01.avif",
+                    "/public/assets/Dunk/Dunk-02-02.avif",
+                    "/public/assets/Dunk/Dunk-02-03.avif",
+                    "/public/assets/Dunk/Dunk-02-04.avif"
                 ],
                 "title": "Nike Dunk Low Twist",
                 "description": "Women's Shoes",
@@ -146,12 +146,12 @@
         "Blazer":[
             {
                 "id": 10,
-                "thumbail": "/assets/Blazer/Blazer-01.avif",
+                "thumbail": "/public/assets/Blazer/Blazer-01.avif",
                 "images": [
-                    "/assets/Blazer/Blazer-01__01.avif",
-                    "/assets/Blazer/Blazer-01__02.avif",
-                    "/assets/Blazer/Blazer-01__03.avif",
-                    "/assets/Blazer/Blazer-01__04.avif"
+                    "/public/assets/Blazer/Blazer-01__01.avif",
+                    "/public/assets/Blazer/Blazer-01__02.avif",
+                    "/public/assets/Blazer/Blazer-01__03.avif",
+                    "/public/assets/Blazer/Blazer-01__04.avif"
                 ],
                 "title": "Nike Air Force 1'07",
                 "description": "Men's shoes",
@@ -161,12 +161,12 @@
             },
             {
                 "id": 11,
-                "thumbail": "/assets/Blazer/Blazer-02.avif",
+                "thumbail": "/public/assets/Blazer/Blazer-02.avif",
                 "images": [
-                    "/assets/Blazer/Blazer-02__01.avif",
-                    "/assets/Blazer/Blazer-02__02.avif",
-                    "/assets/Blazer/Blazer-02__03.avif",
-                    "/assets/Blazer/Blazer-02__04.avif"
+                    "/public/assets/Blazer/Blazer-02__01.avif",
+                    "/public/assets/Blazer/Blazer-02__02.avif",
+                    "/public/assets/Blazer/Blazer-02__03.avif",
+                    "/public/assets/Blazer/Blazer-02__04.avif"
                 ],
                 "title": "Nike Air Force 1'07",
                 "description": "Men's shoes",
@@ -178,12 +178,12 @@
         "Cortez":[
             {
                 "id": 12,
-                "thumbail": "/assets/Cortez/Cortez-01.avif",
+                "thumbail": "/public/assets/Cortez/Cortez-01.avif",
                 "images": [
-                    "/assets/Cortez/Cortez-01__01.avif",
-                    "/assets/Cortez/Cortez-01__02.avif",
-                    "/assets/Cortez/Cortez-01__03.avif",
-                    "/assets/Cortez/Cortez-01__04.avif"
+                    "/public/assets/Cortez/Cortez-01__01.avif",
+                    "/public/assets/Cortez/Cortez-01__02.avif",
+                    "/public/assets/Cortez/Cortez-01__03.avif",
+                    "/public/assets/Cortez/Cortez-01__04.avif"
                 ],
                 "title": "Nike Cortez Leather",
                 "description": "Women's Shoes",
@@ -193,12 +193,12 @@
             },
             {
                 "id": 13,
-                "thumbail": "/assets/Cortez/Cortez-02.avif",
+                "thumbail": "/public/assets/Cortez/Cortez-02.avif",
                 "images": [
-                    "/assets/Cortez/Cortez-02__01.avif",
-                    "/assets/Cortez/Cortez-02__02.avif",
-                    "/assets/Cortez/Cortez-02__03.avif",
-                    "/assets/Cortez/Cortez-02__04.avif"
+                    "/public/assets/Cortez/Cortez-02__01.avif",
+                    "/public/assets/Cortez/Cortez-02__02.avif",
+                    "/public/assets/Cortez/Cortez-02__03.avif",
+                    "/public/assets/Cortez/Cortez-02__04.avif"
                 ],
                 "title": "Nike Cortez Leather",
                 "description": "Men's shoes",

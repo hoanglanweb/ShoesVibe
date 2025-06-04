@@ -3,7 +3,7 @@ const ProductSellerId = params.get("id");
 
 async function loadProductSeller() {
   try {
-    const res = await fetch("/Data/Product.json");
+    const res = await fetch("/public/Data/Product.json");
     const productseller = await res.json();
 
     const allProduct = Object.values(productseller.Product).flat();
@@ -23,7 +23,7 @@ async function loadProductSeller() {
       card.className = "card";
       card.innerHTML = `
 
-                <a href="/Components/Product/ProductDetails.html?id=${item.id}">
+                <a href="/public/Components/Product/ProductDetails.html?id=${item.id}">
                     <img
                       src="${item.thumbail}"
                       alt=""
