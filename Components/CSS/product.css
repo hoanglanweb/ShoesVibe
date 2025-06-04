@@ -32,7 +32,7 @@
 .card {
   cursor: pointer;
   background-color: #fff;
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .card img {
   width: 100%;
@@ -43,12 +43,14 @@
 .card .Card_content h3 {
   margin-top: 0.75rem;
   color: #000;
+
 }
-.card .Card_content .description {
+.card .Card_content .description{
   margin-bottom: 0.5rem;
   color: rgba(128, 128, 128, 0.705);
+
 }
-.card .Card_content .color {
+.card .Card_content .color{
   margin-bottom: 0.5rem;
   color: #000;
 }

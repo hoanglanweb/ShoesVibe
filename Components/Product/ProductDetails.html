@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - ShoesVibe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Components/CSS/productdetails.css" />
+    <link rel="stylesheet" href="/CSS/Contaier.css" />
+    <link rel="stylesheet" href="/CSS/Fonts.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="header-top">
+        <div class="header-top__flex">
+          <div class="header-top__title">
+            <a href="#" class="fa-solid fa-phone-volume"></a>
+            <p>086 777 90028</p>
+          </div>
+          <p class="header-top__p">
+            Black Friday Sale:
+            <strong>
+              <marquee behavior="left" direction=""
+                >Save up to 60% with code ShoesVibe
+              </marquee>
+            </strong>
+          </p>
+          <div class="header-top__langue">
+            <a href="#">VND <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#">Vietnamese <i class="fa-solid fa-angle-down"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header id="header">
+      <div class="header-menu">
+        <div class="header-menu__flex">
+          <div class="header-menu__list">
+            <ul class="header-menu__list-flex">
+              <li><a class="item" href="/index.html">Home</a></li>
+              <li><a class="item" href="#">About Us</a></li>
+              <li class="drop">
+                <a class="drop-btn item" href="#">Shop</a>
+                <ul class="dropdown">
+                  <li><a href="#">New arrivals</a></li>
+                  <li><a href="#">Collects</a></li>
+                  <li class="has-dropdown">
+                    <a href="/Components/Product/Product.html">Shop Details</a>
+                    <ul class="dropmenu__level-1">
+                      <li>
+                        <a
+                          href="/Components/Product/ProductListing.html?category=NikeAirForce"
+                          >Nike Air Force</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/Components/Product/ProductListing.html?category=Jordan"
+                          >Jordan 1</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/Components/Product/ProductListing.html?category=Blazer"
+                          >Nike Blazer</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/Components/Product/ProductListing.html?category=Dunk"
+                          >Nike Dunk</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/Components/Product/ProductListing.html?category=Cortez"
+                          >Nike Cortez</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">For You</a></li>
+                </ul>
+              </li>
+              <li><a class="item" href="/Components/Blog/Blog.html">Blogs</a></li>
+              <li><a class="item" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <p class="header-menu__logo">ShoesVibe</p>
+          <div class="header-menu__infomation">
+            <a href="#" class="fa-solid fa-magnifying-glass icon-none"></a>
+            <a href="#" class="fa-solid fa-user"></a>
+            <a href="#" class="fa-solid fa-cart-shopping"></a>
+            <a href="#" class="fa-solid fa-bars icon-toggle"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="product-container" id="product-detail">
+      <p>Đang tải sản phẩm...</p>
+    </div>
+
+    <div id="product-detail"></div>
+
+    <!-- Đánh giá -->
+    <!-- <div class="review-section">
+      <h3>Đánh giá sản phẩm</h3>
+      <div id="review-list"></div>
+      <form id="review-form">
+        <input
+          type="text"
+          id="review-name"
+          placeholder="Tên của bạn"
+          required
+        />
+        <textarea
+          id="review-text"
+          placeholder="Viết đánh giá của bạn..."
+          required
+        ></textarea>
+        <button type="submit">Gửi đánh giá</button>
+      </form>
+    </div> -->
+
+    <!-- Sản phẩm gợi ý -->
+    <div id="recommended-products" class="recommended">
+      <h3>Recommended products</h3>
+      <div class="recommended__list"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-sections">
+        <div class="footer-column">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Collections</h3>
+          <ul>
+            <li><a href="#">Nike Air Max</a></li>
+            <li><a href="#">Nike Air Max 1 SC</a></li>
+            <li><a href="#">Nike Metcon</a></li>
+            <li><a href="#">Jordan 1 Mid</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="#">My Orders</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Check Out</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-images">
+          <img src="/assets/blog-3.png" alt="Shoes 1" />
+          <img src="/assets/blog-1.png" alt="Shoes 2" />
+          <img src="/assets/blog-2.png" alt="Shoes 3" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="logo">
+          <span class="brand">Shoe<span class="accent">V</span>ibe</span>
+          <!-- From Uiverse.io by alexruix -->
+          <div class="input-group">
+            <input
+              type="email"
+              class="input"
+              id="Email"
+              name="Email"
+              placeholder="uiverse@verse.io"
+              autocomplete="off"
+            />
+            <input class="button--submit" value="Subscribe" type="submit" />
+          </div>
+        </div>
+        <div class="links">
+          <a href="#">Legal</a>
+          <a href="#">Country site map</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Modern slavery statement</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          &copy;2024 All Rights Copyright <strong>ShoeVibe</strong>. Design &
+          Developed By <strong>NHOM1</strong>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/JS/Srcoll.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const productID = params.get("id");
+
+      fetch("/Data/Product.json")
+        .then((res) => res.json())
+        .then((data) => {
+          const products = data.Product;
+          let foundProduct = null;
+
+          Object.values(products).forEach((categoryList) => {
+            const matched = categoryList.find(
+              (p) => String(p.id) === productID
+            );
+            if (matched) foundProduct = matched;
+          });
+
+          const container = document.getElementById("product-detail");
+          const sizeList = foundProduct.size
+            .map((size) => `<li class="size-btn">${size}</li>`)
+            .join("");
+
+          if (foundProduct) {
+            const mainImage = foundProduct.images?.[0] || foundProduct.thumbail;
+
+            const galleryImages = foundProduct.images
+              .map(
+                (img, index) =>
+                  `<img src="${img}" alt="${foundProduct.title}" class="${
+                    index === 0 ? "active" : ""
+                  }" onclick="document.getElementById('main-img').src='${img}'" />`
+              )
+              .join("");
+
+            container.innerHTML = `
+                  <div class="product__item">
+                    <div class="product__left">
+                      <img id="main-img" src="${mainImage}" alt="${foundProduct.title}" />
+                      <div class="gallery">${galleryImages}</div>
+                    </div>
+                    <div class="product__right">
+                      <h2>${foundProduct.title}</h2>
+                      <p>${foundProduct.description}</p>
+                      <p><strong>Màu sắc:</strong> ${foundProduct.color}</p>
+                      <p><strong>Giá:</strong> ${foundProduct.price}</p>
+                      <ul class="sizelist">
+                        ${sizeList}
+                      </ul>
+                      <button class="btn-buy">Buy</button>
+                      <button class="btn-buy btn-cart">Add Cart</button>
+                      <p class="text">
+                          Lorem Ipsum is simply dummy text of 
+                          the printing and typesetting industry. 
+                          Lorem Ipsum has been the industry's standard 
+                          dummy text ever since the 1500s, when an 
+                          unknown printer took a galley of type and 
+                          scrambled it to make a type specimen book. 
+                          It has survived not only five centuries, 
+                          but also the leap into electronic typesetting, 
+                          remaining essentially unchanged. It was popularised 
+                          in the 1960s with the release of Letraset sheets 
+                          containing Lorem Ipsum passages, and more recently 
+                          with desktop publishing software like Aldus PageMaker 
+                          including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                  </div>
+        `;
+
+            // Gợi ý sản phẩm ngẫu nhiên
+            const allProducts = Object.values(products).flat();
+            const recommended = allProducts
+              .filter((p) => String(p.id) !== productID)
+              .sort(() => 0.5 - Math.random())
+              .slice(0, 6);
+
+            const recommendedList =
+              document.querySelector(".recommended__list");
+            recommended.forEach((product) => {
+              const card = document.createElement("div");
+              card.className = "card";
+              card.innerHTML = `
+            <a href="ProductDetails.html?id=${product.id}">
+              <img src="${product.thumbail}" alt="${product.title}" />
+              <div class="card__content">
+                <h4>${product.title}</h4>
+                <p>${product.price}</p>
+              </div>
+            </a>
+          `;
+              recommendedList.appendChild(card);
+            });
+          } else {
+            container.innerHTML = `<p>Sản phẩm không tồn tại.</p>`;
+          }
+        })
+        .catch((err) => {
+          console.error("Lỗi khi tải sản phẩm:", err);
+          document.getElementById(
+            "product-detail"
+          ).innerHTML = `<p>Không thể tải dữ liệu sản phẩm.</p>`;
+        });
+
+      // Đánh giá: xử lý review submission
+      // const form = document.getElementById("review-form");
+      // const reviewList = document.getElementById("review-list");
+
+      // form.addEventListener("submit", (e) => {
+      //   e.preventDefault();
+      //   const name = document.getElementById("review-name").value;
+      //   const text = document.getElementById("review-text").value;
+
+      //   const reviewItem = document.createElement("div");
+      //   reviewItem.className = "review-item";
+      //   reviewItem.innerHTML = `<strong>${name}</strong><p>${text}</p>`;
+
+      //   reviewList.appendChild(reviewItem);
+      //   form.reset();
+      // });
+
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("size-btn")) {
+          const clickedBtn = e.target;
+          // nếu được chọn
+          if (clickedBtn.classList.contains("active")) {
+            clickedBtn.classList.remove("active");
+          } else {
+            document
+              .querySelectorAll(".size-btn")
+              .forEach((btn) => btn.classList.remove("active"));
+            clickedBtn.classList.add("active");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

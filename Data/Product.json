@@ -13,7 +13,8 @@
                 "title": "Nike Air Force 1'07",
                 "description": "Men's shoes",
                 "color": "1 Colour",
-                "price": "2.756.000 VNĐ"
+                "price": "2.756.000 VNĐ",
+                "size" : ["36","37","38","41","43","44","47"]
             },
             {
                 "id": 2,
@@ -27,7 +28,9 @@
                 "title": "Nike Air Force 1'07",
                 "description": "Men's shoes",
                 "color": "1 Colour",
-                "price": "2.756.000 VNĐ"
+                "price": "2.756.000 VNĐ",
+                "size" : ["36","37","41","43","44","49"]
+
             },
             {
                 "id": 3,
@@ -41,7 +44,9 @@
                 "title": "Nike Air Force 1'07 LV8",
                 "description": "Men's shoes",
                 "color": "2 Colour",
-                "price": "2.956.000 VNĐ"
+                "price": "2.956.000 VNĐ",
+                "size" : ["37","38","41","41.5","43","44"]
+
             },
             {
                 "id": 4,
@@ -55,12 +60,13 @@
                 "title": "Nike Air Force 1 LV8",
                 "description": "Older Kid's shoes",
                 "color": "1 Colour",
-                "price": "2.056.000 VNĐ"
+                "price": "2.056.000 VNĐ",
+                "size" : ["36","37","38","38.5","41","43","44"]
             }
         ],
         "Jordan": [
             {
-                "id": 1,
+                "id": 5,
                 "thumbail": "/assets/Jordan/Jordan-01.avif",
                 "images": [
                     "/assets/Jordan/Jordan-01__01.avif",
@@ -71,10 +77,11 @@
                 "title": "Air Jordan 1 Low",
                 "description": "Men's shoes",
                 "color": "1 Colour",
-                "price": "3,239,000 VNĐ"
+                "price": "3,239,000 VNĐ",
+                "size" : ["36.5","37","38","41","44","45"]
             },
             {
-                "id": 2,
+                "id": 6,
                 "thumbail": "/assets/Jordan/Jordan-02.avif",
                 "images": [
                     "/assets/Jordan/Jordan-02__01.avif",
@@ -85,10 +92,11 @@
                 "title": "Air Jordan 1 Low",
                 "description": "Men's shoes",
                 "color": "1 Colour",
-                "price": "2.756.000 VNĐ"
+                "price": "2.756.000 VNĐ",
+                "size" : ["36","37","41","43"]
             },
             {
-                "id": 3,
+                "id": 7,
                 "thumbail": "/assets/Jordan/Jordan-03.avif",
                 "images": [
                     "/assets/Jordan/Jordan-03__01.avif",
@@ -99,42 +107,45 @@
                 "title": "Jordan NU Retro 1 G",
                 "description": "Golf Shoes",
                 "color": "1 Colour",
-                "price": "4,409,000 VNĐ"
+                "price": "4,409,000 VNĐ",
+                "size" : ["36","37","38","41","43","44"]
             }
         ],
         "Dunk": [
             {
-                "id": 1,
+                "id": 8,
                 "thumbail": "/assets/Dunk/Dunk-01.avif",
                 "images": [
-                    "/assets/Dunk/Dunk-01__01.avif",
-                    "/assets/Dunk/Dunk-01__02.avif",
-                    "/assets/Dunk/Dunk-01__03.avif",
-                    "/assets/Dunk/Dunk-01__04.avif"
+                    "/assets/Dunk/Dunk-01-01.avif",
+                    "/assets/Dunk/Dunk-01-02.avif",
+                    "/assets/Dunk/Dunk-01-03.avif",
+                    "/assets/Dunk/Dunk-01-04.avif"
                 ],
                 "title": "Nike Dunk Low SE",
                 "description": "Men's shoes",
                 "color": "1 Colour",
-                "price": "2.756.000 VNĐ"
+                "price": "2.756.000 VNĐ",
+                "size" : ["36","37","38","43","44"]
             },
             {
-                "id": 2,
+                "id": 9,
                 "thumbail": "/assets/Dunk/Dunk-02.avif",
                 "images": [
-                    "/assets/Dunk/Dunk-02__01.avif",
-                    "/assets/Dunk/Dunk-02__02.avif",
-                    "/assets/Dunk/Dunk-02__03.avif",
-                    "/assets/Dunk/Dunk-02__04.avif"
+                    "/assets/Dunk/Dunk-02-01.avif",
+                    "/assets/Dunk/Dunk-02-02.avif",
+                    "/assets/Dunk/Dunk-02-03.avif",
+                    "/assets/Dunk/Dunk-02-04.avif"
                 ],
                 "title": "Nike Dunk Low Twist",
                 "description": "Women's Shoes",
                 "color": "1 Colour",
-                "price": "3,239,000 VNĐ"
+                "price": "3,239,000 VNĐ",
+                "size" : ["36","37","41","43","44","46"]
             }
         ],
         "Blazer":[
             {
-                "id": 1,
+                "id": 10,
                 "thumbail": "/assets/Blazer/Blazer-01.avif",
                 "images": [
                     "/assets/Blazer/Blazer-01__01.avif",
@@ -145,10 +156,11 @@
                 "title": "Nike Air Force 1'07",
                 "description": "Men's shoes",
                 "color": "1 Colour",
-                "price": "2.756.000 VNĐ"
+                "price": "2.756.000 VNĐ",
+                "size" : ["36","37","38","41","43"]
             },
             {
-                "id": 2,
+                "id": 11,
                 "thumbail": "/assets/Blazer/Blazer-02.avif",
                 "images": [
                     "/assets/Blazer/Blazer-02__01.avif",
@@ -159,12 +171,13 @@
                 "title": "Nike Air Force 1'07",
                 "description": "Men's shoes",
                 "color": "1 Colour",
-                "price": "2.756.000 VNĐ"
+                "price": "2.756.000 VNĐ",
+                "size" : ["36","37","38","41","43","44"]
             }
         ],
         "Cortez":[
             {
-                "id": 1,
+                "id": 12,
                 "thumbail": "/assets/Cortez/Cortez-01.avif",
                 "images": [
                     "/assets/Cortez/Cortez-01__01.avif",
@@ -175,10 +188,11 @@
                 "title": "Nike Cortez Leather",
                 "description": "Women's Shoes",
                 "color": "1 Colour",
-                "price": "2.756.000 VNĐ"
+                "price": "2.756.000 VNĐ",
+                "size" : ["36","37","38","41","44"]
             },
             {
-                "id": 2,
+                "id": 13,
                 "thumbail": "/assets/Cortez/Cortez-02.avif",
                 "images": [
                     "/assets/Cortez/Cortez-02__01.avif",
@@ -189,7 +203,8 @@
                 "title": "Nike Cortez Leather",
                 "description": "Men's shoes",
                 "color": "1 Colour",
-                "price": "2,499,000 VNĐ"
+                "price": "2,499,000 VNĐ",
+                "size" : ["36","37","38","41","43","44"]
             }
         ]
     }

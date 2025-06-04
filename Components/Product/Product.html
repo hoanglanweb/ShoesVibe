@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/Components/CSS/productListing.css" />
+    <link rel="stylesheet" href="/Components/CSS/product.css" />
     <link rel="stylesheet" href="/CSS/Contaier.css" />
     <link rel="stylesheet" href="/CSS/Fonts.css" />
   </head>
@@ -52,34 +52,34 @@
                   <li><a href="#">New arrivals</a></li>
                   <li><a href="#">Collects</a></li>
                   <li class="has-dropdown">
-                    <a href="/Components/ProductListing.html">Shop Details</a>
+                    <a href="/Components/Product/Product.html">Shop Details</a>
                     <ul class="dropmenu__level-1">
                       <li>
                         <a
-                          href="/Components/ProductListing.html?category=NikeAirForce"
+                          href="/Components/Product/ProductListing.html?category=NikeAirForce"
                           >Nike Air Force</a
                         >
                       </li>
                       <li>
                         <a
-                          href="/Components/ProductListing.html?category=Jordan"
+                          href="/Components/Product/ProductListing.html?category=Jordan"
                           >Jordan 1</a
                         >
                       </li>
                       <li>
                         <a
-                          href="/Components/ProductListing.html?category=Blazer"
+                          href="/Components/Product/ProductListing.html?category=Blazer"
                           >Nike Blazer</a
                         >
                       </li>
                       <li>
-                        <a href="/Components/ProductListing.html?category=Dunk"
+                        <a href="/Components/Product/ProductListing.html?category=Dunk"
                           >Nike Dunk</a
                         >
                       </li>
                       <li>
                         <a
-                          href="/Components/ProductListing.html?category=Cortez"
+                          href="/Components/Product/ProductListing.html?category=Cortez"
                           >Nike Cortez</a
                         >
                       </li>
@@ -88,7 +88,7 @@
                   <li><a href="#">For You</a></li>
                 </ul>
               </li>
-              <li><a class="item" href="#">Blogs</a></li>
+              <li><a class="item" href="/Components/Blog/Blog.html">Blogs</a></li>
               <li><a class="item" href="#">Contact Us</a></li>
             </ul>
           </div>
@@ -216,13 +216,15 @@
               const div = document.createElement("div");
               div.className = "card";
               div.innerHTML = `
+              <a href="ProductDetails.html?id=${product.id}">
                  <img src="${product.thumbail}" alt="${product.title}" />
                  <div class="Card_content">
                    <h3>${product.title}</h3>
-                   <p>${product.description}</p>
-                   <p>${product.color}</p>
+                   <p class="description">${product.description}</p>
+                   <p class="color">${product.color}</p>
                    <p class="price">${product.price}</p>
                  </div>
+              </a>
         `;
               container.appendChild(div);
             });
