@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/toast.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Đăng nhập</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Mật khẩu" />
+    <button id="btn-signin">Đăng nhập</button>
+    <p><a href="reset.html">Quên mật khẩu?</a></p>
+    <p>Chưa có tài khoản? <a href="register.html">Đăng ký</a></p>
+  </div>
+
+  <div id="toast-container"></div>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="module" src="/Components/user/server.js"></script>
+</body>
+</html>

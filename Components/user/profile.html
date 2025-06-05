@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hồ sơ cá nhân</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/toast.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Thông tin người dùng</h2>
+    <p id="user-email">Đang tải...</p>
+    <button onclick="logout()">Đăng xuất</button>
+  </div>
+
+  <div id="toast-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/Components/user/config.js"></script>
+  <script>
+    (async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        document.getElementById('user-email').textContent = 'Email: ' + user.email;
+      } else {
+        window.location.href = "login.html";
+      }
+    })();
+  </script>
+  <script src="/Components/user/server.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quên mật khẩu</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/toast.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Khôi phục mật khẩu</h2>
+    <input type="email" id="reset-email" placeholder="Email" />
+    <button onclick="sendResetLink()">Gửi liên kết</button>
+  </div>
+
+  <div id="toast-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/Components/user/config.js"></script>
+  <script src="/Components/user/toast.js"></script>
+  <script src="/Components/user/server.js"></script>
+</body>
+</html>
