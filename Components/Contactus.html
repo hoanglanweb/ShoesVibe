@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ - Cửa Hàng Thể Thao</title>
+    <title>Hiệu ứng trượt</title>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/CSS/Contaier.css">
+    <link rel="stylesheet" href="/CSS/Fonts.css">
+    <style>
+      .image-box {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+
+      .image-box .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .image-box .slide.active {
+        opacity: 1;
+      }
+
+      iframe {
+        height: 500px;
+        width: 1400px;
+        margin-left: 70px;
+        border-radius: 20px;
+        border: none;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #DAD7CD;
+      }
+      .content-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+      .image-box,
+      .form-box {
+        flex: 1 1 48%;
+        max-width: 600px;
+        background-color: rgba(69, 113, 137, 0.984);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(88, 189, 186, 0.789);
+        padding: 20px;
+        box-sizing: border-box;
+        /* margin-left: 50px; → XÓA */
+      }
+      .image-box img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(240, 240, 240, 0.923);
+        height: auto;
+        position: relative;
+        animation: slideImage 4s ease-in-out infinite alternate;
+      }
+
+      @keyframes slideImage {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(30px);
+        }
+      }
+
+      h2,
+      h3 {
+        color: #f1f1f1;
+        margin-top: 0;
+      }
+
+      label {
+        color: rgb(222, 219, 37);
+        font-weight: bold;
+        display: block;
+        margin: 10px 0 5px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #3cab56;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+
+      button:hover {
+        background-color: #218838;
+      }
+
+      .contact-info {
+        margin-top: 30px;
+      }
+      image-box img fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <header class="container">
+          <div class="header-top">
+            <div class="header-top__flex">
+              <div class="header-top__title">
+                <a href="#" class="fa-solid fa-phone-volume"></a>
+              </div>
+              <div class="header-top__p">
+                <p>Black Friday Sale:</p>
+                <p>
+                  <marquee behavior="left" direction="auto"
+                    >Save up to 60% with code ShoesVibe
+                  </marquee>
+                </p>
+              </div>
+              <div class="header-top__langue">
+                <a href="#">VND <i class="fa-solid fa-angle-down"></i></a>
+                <a href="#"
+                  >Vietnamese <i class="fa-solid fa-angle-down"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <header id="header">
+          <div class="header-menu">
+            <div class="header-menu__flex">
+              <div class="header-menu__list">
+                <ul class="header-menu__list-flex">
+                  <li><a class="item" href="#">Home</a></li>
+                  <li><a class="item" href="#">About Us</a></li>
+                  <li class="drop">
+                    <a class="drop-btn item" href="#">Shop</a>
+                    <ul class="dropdown">
+                      <li><a href="#">New arrivals</a></li>
+                      <li><a href="#">Collects</a></li>
+                      <li class="has-dropdown">
+                        <a href="/Components/Product/Product.html"
+                          >Shop Details</a
+                        >
+                        <ul class="dropmenu__level-1">
+                          <li>
+                            <a
+                              href="/Components/Product/ProductListing.html?category=NikeAirForce"
+                              >Nike Air Force</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/Components/Product/ProductListing.html?category=Jordan"
+                              >Jordan 1</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/Components/Product/ProductListing.html?category=Blazer"
+                              >Nike Blazer</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/Components/Product/ProductListing.html?category=Dunk"
+                              >Nike Dunk</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/Components/Product/ProductListing.html?category=Cortez"
+                              >Nike Cortez</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="#">For You</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="item" href="/Components/Blog/Blog.html">Blogs</a>
+                  </li>
+                  <li><a class="item" href="/Components/Contactus.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <p class="header-menu__logo">ShoesVibe</p>
+              <div class="header-menu__infomation">
+                <a href="#" class="fa-solid fa-magnifying-glass icon-none"></a>
+                <a href="#" class="fa-solid fa-user"></a>
+                <a href="#" class="fa-solid fa-cart-shopping"></a>
+                <a href="#" class="fa-solid fa-bars icon-toggle"></a>
+              </div>
+            </div>
+          </div>
+        </header>
+    <script>
+      const SUPABASE_URL = "https://your-project.supabase.co"; // Thay thế bằng URL dự án của bạn
+      const SUPABASE_ANON_KEY = "your-anon-key"; // Thay thế bằng Anon Key của bạn
+      const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll(".image-box .slide");
+        let currentIndex = 0;
+
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+          });
+        }
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
+        }
+
+        // Hiển thị slide đầu tiên
+        showSlide(currentIndex);
+
+        // Chuyển slide mỗi 3 giây
+        setInterval(nextSlide, 3000);
+      });
+    </script>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.605320708433!2d106.6707558748047!3d10.764870089383221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee10bef3c07%3A0xfd59127e8c2a3e0!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEtpbmggdOG6vyBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1749046707001!5m2!1svi!2s"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <div class="content-wrapper">
+      <div class="image-box">
+        <img
+          src="https://photo.znews.vn/w660/Uploaded/yqdxwpcww/2022_05_28/darzan.jpg"
+          alt="Đôi giày Nike có người đeo"
+        />
+      </div>
+
+      <div class="form-box">
+        <h2>Gửi thông tin cho chúng tôi</h2>
+        <h3><i>Nếu bạn đang gặp một số vấn đề trong shop</i></h3>
+        <form action="/" method="POST">
+          <label for="name">Họ và tên:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="phone">Số điện thoại:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Nội dung:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Gửi đi</button>
+          <div></div>
+
+          <div class="contact-info">
+            <h3>Thông tin liên hệ khác:</h3>
+            <p><strong>Địa chỉ:</strong> 33 đường Vĩnh Viễn, Quận 10, TP.HCM</p>
+            <p><strong>Số điện thoại:</strong> (09) 1985 5172</p>
+            <p><strong>Email:</strong> lotv2006@gmail.com</p>
+            <p>
+              <strong>Giờ làm việc:</strong> Thứ Hai đến Thứ Sáu, từ 9:00 sáng
+              đến 6:00 chiều
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+         <footer class="footer">
+        <div class="footer-sections">
+          <div class="footer-column">
+            <h3>Menu</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Cart</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Collections</h3>
+            <ul>
+              <li><a href="#">Nike Air Max</a></li>
+              <li><a href="#">Nike Air Max 1 SC</a></li>
+              <li><a href="#">Nike Metcon</a></li>
+              <li><a href="#">Jordan 1 Mid</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>My Account</h3>
+            <ul>
+              <li><a href="#">My Orders</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Check Out</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-images">
+            <img src="/assets/blog-3.png" alt="Shoes 1" />
+            <img src="/assets/blog-1.png" alt="Shoes 2" />
+            <img src="/assets/blog-2.png" alt="Shoes 3" />
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="logo">
+            <span class="brand">Shoe<span class="accent">V</span>ibe</span>
+            <!-- From Uiverse.io by alexruix -->
+            <div class="input-group">
+              <input
+                type="email"
+                class="input"
+                id="Email"
+                name="Email"
+                placeholder="uiverse@verse.io"
+                autocomplete="off"
+              />
+              <input class="button--submit" value="Subscribe" type="submit" />
+            </div>
+          </div>
+          <div class="links">
+            <a href="#">Legal</a>
+            <a href="#">Country site map</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Modern slavery statement</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy;2024 All Rights Copyright <strong>ShoeVibe</strong>. Design &
+            Developed By <strong>NHOM1</strong>.
+          </p>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="/JS/Srcoll.js"></script>
+  </body>
+</html>
