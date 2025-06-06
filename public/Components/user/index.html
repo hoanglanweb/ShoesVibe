@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+      }
+      h1 {
+        font-size: 2rem;
+        color: var(--primary-color);
+      }
+      .button-group {
+        margin-top: 2rem;
+      }
+      .button-group a {
+        margin: 0 1rem;
+        padding: 0.5rem 1rem;
+        background-color: green;
+        color: #fff;
+        border-radius: 6px;
+        outline: 1px solid #000;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chào mừng bạn đến với hệ thống!</h1>
+    <p>Quản lý tài khoản, đơn hàng và vai trò người dùng dễ dàng.</p>
+
+    <div class="button-group">
+      <a href="login.html">Đăng nhập</a>
+      <a href="register.html">Đăng ký</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", async () => {
+        const {
+          data: { user },
+        } = await supabase.auth.getUser();
+        if (user) {
+          window.location.href = "profile.html";
+        }
+      });
+    </script>
+    <script type="module" src="/Components/user/config.js"></script>
+    <script src="/Components/user/server.js" defer></script>
+    
+  </body>
+</html>

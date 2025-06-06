@@ -92,23 +92,30 @@
               <li>
                 <a class="item" href="/Components/Blog/Blog.html">Blogs</a>
               </li>
-              <li><a class="item" href="#">Contact Us</a></li>
+              <li><a class="item" href="/Components/Contactus.html">Contact Us</a></li>
             </ul>
           </div>
           <p class="header-menu__logo">ShoesVibe</p>
           <div class="header-menu__infomation">
             <a href="#" class="fa-solid fa-magnifying-glass icon-none"></a>
             <a href="#" class="fa-solid fa-user"></a>
-            <a href="#" class="fa-solid fa-cart-shopping"></a>
+            <a
+              href="/Components/CartShopping/AddtoCart.html"
+              class="fa-solid fa-cart-shopping"
+            >
+              <span class="cart-count">0</span>
+            </a>
             <a href="#" class="fa-solid fa-bars icon-toggle"></a>
-            
           </div>
         </div>
       </div>
     </header>
-    
+
     <div id="product-detail"></div>
-    <a href="/Components/Product/Product.html" class="fa-solid fa-arrow-left iback"></a>
+    <a
+      href="/Components/Product/Product.html"
+      class="fa-solid fa-arrow-left iback"
+    ></a>
 
     <!-- Sản phẩm gợi ý -->
     <div id="recommended-products" class="recommended">
@@ -204,6 +211,40 @@
           });
 
           const container = document.getElementById("product-detail");
+          // xủ lý tác dụng giỏ hàng
+          document.addEventListener("click", function (e) {
+            if (e.target.classList.contains("btn-cart")) {
+              const selectedSize = document.querySelector(".size-btn.active");
+              if (!selectedSize) {
+                alert("Vui lòng chọn size giày trước khi thêm vào giỏ hàng!");
+                return;
+              }
+
+              const cart = JSON.parse(localStorage.getItem("cart")) || [];
+              const product = {
+                id: foundProduct.id,
+                title: foundProduct.title,
+                image: foundProduct.thumbail,
+                price: foundProduct.price,
+                size: selectedSize.textContent,
+                quantity: 1,
+              };
+
+              const existing = cart.findIndex(
+                (item) => item.id === product.id && item.size === product.size
+              );
+
+              if (existing !== -1) {
+                cart[existing].quantity += 1;
+              } else {
+                cart.push(product);
+              }
+
+              localStorage.setItem("cart", JSON.stringify(cart));
+              updateCartCount();
+              alert("Đã thêm vào giỏ hàng!");
+            }
+          });
           const sizeList = foundProduct.size
             .map((size) => `<li class="size-btn">${size}</li>`)
             .join("");
@@ -289,23 +330,7 @@
           ).innerHTML = `<p>Không thể tải dữ liệu sản phẩm.</p>`;
         });
 
-      // Đánh giá: xử lý review submission
-      // const form = document.getElementById("review-form");
-      // const reviewList = document.getElementById("review-list");
-
-      // form.addEventListener("submit", (e) => {
-      //   e.preventDefault();
-      //   const name = document.getElementById("review-name").value;
-      //   const text = document.getElementById("review-text").value;
-
-      //   const reviewItem = document.createElement("div");
-      //   reviewItem.className = "review-item";
-      //   reviewItem.innerHTML = `<strong>${name}</strong><p>${text}</p>`;
-
-      //   reviewList.appendChild(reviewItem);
-      //   form.reset();
-      // });
-
+      // xử lý tác vụ chọn click size
       document.addEventListener("click", function (e) {
         if (e.target.classList.contains("size-btn")) {
           const clickedBtn = e.target;
@@ -318,6 +343,30 @@
               .forEach((btn) => btn.classList.remove("active"));
             clickedBtn.classList.add("active");
           }
+        }
+      });
+    </script>
+    <script>
+      function updateCartCount() {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const totalQty = cart.reduce((sum, item) => sum + item.quantity, 0);
+        const cartCountElem = document.querySelector(".cart-count");
+
+        if (cartCountElem) {
+          cartCountElem.textContent = totalQty;
+          cartCountElem.style.display = totalQty > 0 ? "inline-block" : "none";
+        }
+      }
+
+      // Gọi hàm khi trang tải xong
+      document.addEventListener("DOMContentLoaded", updateCartCount);
+
+      // Nếu bạn thêm sản phẩm vào giỏ hàng thì gọi updateCartCount() luôn
+      // Ví dụ trong đoạn code thêm giỏ hàng của bạn:
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("btn-cart")) {
+          // ...code thêm giỏ hàng...
+          updateCartCount(); // Cập nhật số lượng ngay sau khi thêm
         }
       });
     </script>

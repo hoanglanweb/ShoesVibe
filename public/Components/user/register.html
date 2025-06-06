@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/toast.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Đăng ký</h2>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Mật khẩu" />
+      <button id="btn-signup">Đăng ký</button>
+      <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- <script src="/Components/user/config.js"></script> -->
+    <!-- <script type="module">
+      import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+
+      const SUPABASE_URL = "https://drrhonkiqhmpnqhuzvlh.supabase.co";
+      const SUPABASE_ANON_KEY =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRycmhvbmtpcWhtcG5xaHV6dmxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc4OTU3NTgsImV4cCI6MjA2MzQ3MTc1OH0.E8veK1djbCd0CHinT8soI8oeKnY8BjzlEjR8wzAnwIk";
+
+      const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+      // Test query
+      const { data, error } = await supabase
+        .from("your_table_name")
+        .select("*");
+      console.log("Data:", data);
+      console.log("Error:", error);
+    </script> -->
+    <script type="module" src="/Components/user/toast.js"></script>
+    <script type="module" src="/Components/user/server.js"></script>
+  </body>
+</html>

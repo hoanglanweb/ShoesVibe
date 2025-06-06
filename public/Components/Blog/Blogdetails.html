@@ -78,7 +78,8 @@
                         >
                       </li>
                       <li>
-                        <a href="/Components/Product/ProductListing.html?category=Dunk"
+                        <a
+                          href="/Components/Product/ProductListing.html?category=Dunk"
                           >Nike Dunk</a
                         >
                       </li>
@@ -93,15 +94,21 @@
                   <li><a href="#">For You</a></li>
                 </ul>
               </li>
-              <li><a class="item" href="/Components/Blog/Blog.html">Blogs</a></li>
-              <li><a class="item" href="#">Contact Us</a></li>
+              <li>
+                <a class="item" href="/Components/Blog/Blog.html">Blogs</a>
+              </li>
+              <li><a class="item" href="/Components/Contactus.html">Contact Us</a></li>
             </ul>
           </div>
           <p class="header-menu__logo">ShoesVibe</p>
           <div class="header-menu__infomation">
             <a href="#" class="fa-solid fa-magnifying-glass icon-none"></a>
-            <a href="#" class="fa-solid fa-user"></a>
-            <a href="#" class="fa-solid fa-cart-shopping"></a>
+            <a href="/Components/user/login.html" class="fa-solid fa-user"></a>
+            <a
+              href="/Components/CartShopping/AddtoCart.html"
+              class="fa-solid fa-cart-shopping"
+            >
+          <span class="cart-count"></span></a>
             <a href="#" class="fa-solid fa-bars icon-toggle"></a>
           </div>
         </div>
@@ -318,6 +325,8 @@
       </div>
     </footer>
     <script src="/JS/Srcoll.js"></script>
+    <script src="/Components/CartShopping/AddtoCart.js"></script>
+
     <script>
       const form = document.getElementById("commentForm");
       const commentList = document.getElementById("commentList");
