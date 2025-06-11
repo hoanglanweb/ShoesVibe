@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="/Components/user/assets/style.css" />
+  <link rel="stylesheet" href="/Components/user/assets/toast.css" />
+  <style>
+    :root {
+      --primary-color: #2ecc71;
+      --text-color: #fff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ecf0f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .button-group {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .button-group a {
+      padding: 0.6rem 1.2rem;
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .button-group a:hover {
+      background-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chào mừng đến ShoesVibe</h1>
+  <p>Hãy đăng nhập hoặc đăng ký để bắt đầu</p>
+
+  <div class="button-group">
+    <a href="/Components/user/login.html">Đăng nhập</a>
+    <a href="/Components/user/register.html">Đăng ký</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="module" src="/Components/user/config.js"></script>
+</body>
+</html>

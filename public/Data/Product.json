@@ -14,7 +14,15 @@
                 "description": "Men's shoes",
                 "color": "1 Colour",
                 "price": "2.756.000 VNĐ",
-                "size" : ["36","37","38","41","43","44","47"]
+                "size": [
+                    "36",
+                    "37",
+                    "38",
+                    "41",
+                    "43",
+                    "44",
+                    "47"
+                ]
             },
             {
                 "id": 2,
@@ -29,8 +37,14 @@
                 "description": "Men's shoes",
                 "color": "1 Colour",
                 "price": "2.756.000 VNĐ",
-                "size" : ["36","37","41","43","44","49"]
-
+                "size": [
+                    "36",
+                    "37",
+                    "41",
+                    "43",
+                    "44",
+                    "49"
+                ]
             },
             {
                 "id": 3,
@@ -45,8 +59,14 @@
                 "description": "Men's shoes",
                 "color": "2 Colour",
                 "price": "2.956.000 VNĐ",
-                "size" : ["37","38","41","41.5","43","44"]
-
+                "size": [
+                    "37",
+                    "38",
+                    "41",
+                    "41.5",
+                    "43",
+                    "44"
+                ]
             },
             {
                 "id": 4,
@@ -61,7 +81,15 @@
                 "description": "Older Kid's shoes",
                 "color": "1 Colour",
                 "price": "2.056.000 VNĐ",
-                "size" : ["36","37","38","38.5","41","43","44"]
+                "size": [
+                    "36",
+                    "37",
+                    "38",
+                    "38.5",
+                    "41",
+                    "43",
+                    "44"
+                ]
             }
         ],
         "Jordan": [
@@ -78,7 +106,14 @@
                 "description": "Men's shoes",
                 "color": "1 Colour",
                 "price": "3,239,000 VNĐ",
-                "size" : ["36.5","37","38","41","44","45"]
+                "size": [
+                    "36.5",
+                    "37",
+                    "38",
+                    "41",
+                    "44",
+                    "45"
+                ]
             },
             {
                 "id": 6,
@@ -93,7 +128,12 @@
                 "description": "Men's shoes",
                 "color": "1 Colour",
                 "price": "2.756.000 VNĐ",
-                "size" : ["36","37","41","43"]
+                "size": [
+                    "36",
+                    "37",
+                    "41",
+                    "43"
+                ]
             },
             {
                 "id": 7,
@@ -108,7 +148,14 @@
                 "description": "Golf Shoes",
                 "color": "1 Colour",
                 "price": "4,409,000 VNĐ",
-                "size" : ["36","37","38","41","43","44"]
+                "size": [
+                    "36",
+                    "37",
+                    "38",
+                    "41",
+                    "43",
+                    "44"
+                ]
             }
         ],
         "Dunk": [
@@ -125,7 +172,13 @@
                 "description": "Men's shoes",
                 "color": "1 Colour",
                 "price": "2.756.000 VNĐ",
-                "size" : ["36","37","38","43","44"]
+                "size": [
+                    "36",
+                    "37",
+                    "38",
+                    "43",
+                    "44"
+                ]
             },
             {
                 "id": 9,
@@ -140,10 +193,17 @@
                 "description": "Women's Shoes",
                 "color": "1 Colour",
                 "price": "3,239,000 VNĐ",
-                "size" : ["36","37","41","43","44","46"]
+                "size": [
+                    "36",
+                    "37",
+                    "41",
+                    "43",
+                    "44",
+                    "46"
+                ]
             }
         ],
-        "Blazer":[
+        "Blazer": [
             {
                 "id": 10,
                 "thumbail": "/assets/Blazer/Blazer-01.avif",
@@ -157,7 +217,13 @@
                 "description": "Men's shoes",
                 "color": "1 Colour",
                 "price": "2.756.000 VNĐ",
-                "size" : ["36","37","38","41","43"]
+                "size": [
+                    "36",
+                    "37",
+                    "38",
+                    "41",
+                    "43"
+                ]
             },
             {
                 "id": 11,
@@ -172,10 +238,17 @@
                 "description": "Men's shoes",
                 "color": "1 Colour",
                 "price": "2.756.000 VNĐ",
-                "size" : ["36","37","38","41","43","44"]
+                "size": [
+                    "36",
+                    "37",
+                    "38",
+                    "41",
+                    "43",
+                    "44"
+                ]
             }
         ],
-        "Cortez":[
+        "Cortez": [
             {
                 "id": 12,
                 "thumbail": "/assets/Cortez/Cortez-01.avif",
@@ -189,7 +262,13 @@
                 "description": "Women's Shoes",
                 "color": "1 Colour",
                 "price": "2.756.000 VNĐ",
-                "size" : ["36","37","38","41","44"]
+                "size": [
+                    "36",
+                    "37",
+                    "38",
+                    "41",
+                    "44"
+                ]
             },
             {
                 "id": 13,
@@ -204,8 +283,162 @@
                 "description": "Men's shoes",
                 "color": "1 Colour",
                 "price": "2,499,000 VNĐ",
-                "size" : ["36","37","38","41","43","44"]
+                "size": [
+                    "36",
+                    "37",
+                    "38",
+                    "41",
+                    "43",
+                    "44"
+                ]
+            }
+        ],
+        "Arrivals": [
+            {
+                "id": 14,
+                "thumbail": "/assets/NewArrivals/Zoom-01.avif",
+                "images": [
+                    "/assets/NewArrivals/Zoom-01__01.avif",
+                    "/assets/NewArrivals/Zoom-01__02.avif",
+                    "/assets/NewArrivals/Zoom-01__03.avif",
+                    "/assets/NewArrivals/Zoom-01__04.avif"
+                ],
+                "title": "Nike Zoom Fly 6",
+                "description": "Men's Road Racing Shoes",
+                "color": "1 Colour",
+                "price": "4,999,000 VNĐ",
+                "size": [
+                    "36.5",
+                    "37",
+                    "38",
+                    "40.5",
+                    "41",
+                    "43",
+                    "44",
+                    "47"
+                ]
+            },
+            {
+                "id": 15,
+                "thumbail": "/assets/NewArrivals/Zoom-02.avif",
+                "images": [
+                    "/assets/NewArrivals/Zoom-02__01.avif",
+                    "/assets/NewArrivals/Zoom-02__02.avif",
+                    "/assets/NewArrivals/Zoom-02__03.avif",
+                    "/assets/NewArrivals/Zoom-02__04.avif"
+                ],
+                "title": "Nike Zoom Vomero 5",
+                "description": "Women's Shoes",
+                "color": "1 Colour",
+                "price": "4.699.000 VNĐ",
+                "size": [
+                    "36.5",
+                    "37",
+                    "38",
+                    "40.5",
+                    "41.4",
+                    "43.4",
+                    "44",
+                    "47"
+                ]
+            },
+            {
+                "id": 16,
+                "thumbail": "/assets/NewArrivals/Zoom-03.avif",
+                "images": [
+                    "/assets/NewArrivals/Zoom-03__01.avif",
+                    "/assets/NewArrivals/Zoom-03__02.avif",
+                    "/assets/NewArrivals/Zoom-03__03.avif",
+                    "/assets/NewArrivals/Zoom-03__04.avif"
+                ],
+                "title": "Nike Zoom Fly 6",
+                "description": "Women's Road Racing Shoes",
+                "color": "1 Colour",
+                "price": "4.999.000 VNĐ",
+                "size": [
+                    "36.5",
+                    "37",
+                    "38",
+                    "40.5",
+                    "41",
+                    "43.5",
+                    "44",
+                    "47.5"
+                ]
+            },
+            {
+                "id": 17,
+                "thumbail": "/assets/NewArrivals/Zoom-04.avif",
+                "images": [
+                    "/assets/NewArrivals/Zoom-04__01.avif",
+                    "/assets/NewArrivals/Zoom-04__02.avif",
+                    "/assets/NewArrivals/Zoom-04__03.avif",
+                    "/assets/NewArrivals/Zoom-04__04.avif"
+                ],
+                "title": "Nike Zoom Rival Fly 4",
+                "description": "Men's Road Racing Shoes",
+                "color": "1 Colour",
+                "price": "2.471.199 VNĐ",
+                "size": [
+                    "36",
+                    "37.5",
+                    "38.5",
+                    "40.5",
+                    "41",
+                    "43",
+                    "44",
+                    "47"
+                ]
+            },
+            {
+                "id": 18,
+                "thumbail": "/assets/NewArrivals/Isla_01.avif",
+                "images": [
+                    "/assets/NewArrivals/Isla_01__01.avif",
+                    "/assets/NewArrivals/Isla_01__02.avif",
+                    "/assets/NewArrivals/Isla_01__03.avif",
+                    "/assets/NewArrivals/Isla_01__04.avif"
+                ],
+                "title": "Nike Air Max Isla",
+                "description": "Women's Sandals",
+                "color": "1 Colour",
+                "price": "3.089.000 VNĐ",
+                "size": [
+                    "36",
+                    "37.5",
+                    "38.5",
+                    "40.5",
+                    "41",
+                    "43",
+                    "44",
+                    "47"
+                ]
+            },
+            {
+                "id": 19,
+                "thumbail": "/assets/NewArrivals/ReactX-01.avif",
+                "images": [
+                    "/assets/NewArrivals/ReactX-01__01.avif",
+                    "/assets/NewArrivals/ReactX-01__02.avif",
+                    "/assets/NewArrivals/ReactX-01__03.avif",
+                    "/assets/NewArrivals/ReactX-01__04.avif"
+                ],
+                "title": "Nike ReactX Rejuven8",
+                "description": "Women's Shoes",
+                "color": "1 Colour",
+                "price": "2.069.000 VNĐ",
+                "size": [
+                    "36",
+                    "37.5",
+                    "38.5",
+                    "40.5",
+                    "41",
+                    "43",
+                    "44",
+                    "47"
+                ]
             }
         ]
-    }
+    },
+    "New_Arrivals": {}
 }

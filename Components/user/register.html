@@ -8,13 +8,15 @@
   </head>
   <body>
     <div class="container">
-      <h2>Đăng ký</h2>
-      <input type="email" id="email" placeholder="Email" />
-      <input type="password" id="password" placeholder="Mật khẩu" />
-      <button id="btn-signup">Đăng ký</button>
-      <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
-    </div>
-
+  <h2>Đăng ký</h2>
+  <input type="text" id="full_name" placeholder="Họ tên" />
+  <input type="tel" id="phone" placeholder="Số điện thoại" />
+  <input type="text" id="address" placeholder="Địa chỉ" />
+  <input type="email" id="email" placeholder="Email" />
+  <input type="password" id="password" placeholder="Mật khẩu" />
+  <button id="btn-signup">Đăng ký</button>
+  <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+</div>
     <div id="toast-container"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -36,6 +38,6 @@
       console.log("Error:", error);
     </script> -->
     <script type="module" src="/Components/user/toast.js"></script>
-    <script type="module" src="/Components/user/server.js"></script>
+    <script type="module" src="/Components/user/signup.js"></script>
   </body>
 </html>

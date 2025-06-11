@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="assets/toast.css" />
 </head>
 <body>
-  <div class="container">
-    <h2>Thông tin người dùng</h2>
-    <p id="user-email">Đang tải...</p>
-    <button onclick="logout()">Đăng xuất</button>
-  </div>
+ <h2>Thông tin cá nhân</h2>
+<p><strong>Họ tên:</strong> <span id="full_name"></span></p>
+<p><strong>Email:</strong> <span id="email"></span></p>
+<p><strong>Điện thoại:</strong> <span id="phone"></span></p>
+<p><strong>Địa chỉ:</strong> <span id="address"></span></p>
+<button id="logout">Đăng xuất</button>
 
-  <div id="toast-container"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="/Components/user/config.js"></script>
@@ -27,6 +27,6 @@
       }
     })();
   </script>
-  <script src="/Components/user/server.js"></script>
+  <script src="/Components/user/profile.js"></script>
 </body>
 </html>

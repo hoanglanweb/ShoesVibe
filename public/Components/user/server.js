@@ -1,8 +1,10 @@
-import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
-const SUPABASE_URL = "https://drrhonkiqhmpnqhuzvlh.supabase.co";
-const SUPABASE_ANON_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRycmhvbmtpcWhtcG5xaHV6dmxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc4OTU3NTgsImV4cCI6MjA2MzQ3MTc1OH0.E8veK1djbCd0CHinT8soI8oeKnY8BjzlEjR8wzAnwIk";
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+const SUPABASE_URL = 'https://ktnpeskqyygikjitfkno.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt0bnBlc2txeXlnaWtqaXRma25vIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc4OTk4MjEsImV4cCI6MjA2MzQ3NTgyMX0.h-i2kZF3dygFXAAuLUjzHYFJgI0Np5lUogZvxPD6RaI';
+
+ export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY); 
+
 // Đăng ký
 function validateEmail(email) {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -12,22 +14,51 @@ function validateEmail(email) {
 function validatePassword(password) {
   return password.length >= 6;
 }
-
 async function signUp() {
+  const full_name = document.getElementById("full_name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const address = document.getElementById("address").value.trim();
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
 
-  if (!validateEmail(email)) return showToast("error", "Email không hợp lệ");
+  if (!full_name || !phone || !address)
+    return showToast("error", "Vui lòng điền đầy đủ thông tin");
+
+  if (!validateEmail(email))
+    return showToast("error", "Email không hợp lệ");
+
   if (!validatePassword(password))
     return showToast("error", "Mật khẩu phải từ 6 ký tự");
 
-  const { error } = await supabase.auth.signUp({ email, password });
-  if (error) {
-    showToast("error", error.message);
-  } else {
-    showToast("success", "Vui lòng kiểm tra email để xác minh!");
+  const { data, error: signUpError } = await supabase.auth.signUp({ email, password });
+
+  if (signUpError) {
+    return showToast("error", signUpError.message);
   }
+
+  // Chèn dữ liệu vào bảng profiles
+  if (data?.user?.id) {
+    const { error: insertError } = await supabase.from('profiles').insert([
+      {
+        id: data.user.id,
+        full_name,
+        phone,
+        address,
+        created_at: new Date().toISOString()
+      }
+    ]);
+
+    if (insertError) {
+      return showToast("error", "Lỗi khi lưu thông tin người dùng");
+    }
+  }
+
+  showToast("success", "Đăng ký thành công, đang chuyển hướng...");
+  setTimeout(() => {
+    window.location.href = "/Components/user/login.html"; // Trang chủ của bạn
+  }, 1500);
 }
+
 
 // Gắn sự kiện sau khi DOM tải xong
 document.addEventListener("DOMContentLoaded", () => {
